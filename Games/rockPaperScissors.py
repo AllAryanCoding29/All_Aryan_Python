@@ -17,7 +17,7 @@ while True:
             computer = "Paper"
         while True:
             player = input("Type Rock, Paper, or Scissors (case matters): ")
-            if player != "Rock" and "Paper" and "Scissors":
+            if player != "Rock" and player != "Paper" and player != "Scissors":
                 print("Incorrect, Non-valid Entry. Case as prompted. Try again.")
             else:
                 break
@@ -32,12 +32,11 @@ while True:
             print(f"The computer played {computer}; You won the round! 1 point to you")
             playerPoints = playerPoints + 1
         print(f"You now have {playerPoints} points, and the computer now has {computerPoints} points.")
-
     if playerPoints > computerPoints:
         print(f"You won with {playerPoints} points. The computer had {computerPoints} points.")
         restart = int(input("Do you want to play again? If so, type the number of games you want. Else, enter 0: "))
         if restart > 0:
-            i = restart
+            number = restart
             print("Restarting...")
         else:
             print("Thanks for playing My Rock, Paper, and Scissors Game!")
@@ -46,7 +45,7 @@ while True:
         print(f"It was close, but you unfortunately lost. The computer scored {computerPoints} points, and you scored {playerPoints} points.")
         restart = int(input("Do you want to play again? If so, type the number of games you want. Else, enter 0: "))
         if restart > 0:
-            i = restart
+            number = restart
             print("Restarting...")
         else:
             print("Thanks for playing My Rock, Paper, and Scissors Game!")
@@ -55,7 +54,7 @@ while True:
         print("You got a tie! Play again to see if you can win!")
         restart = int(input("Do you want to play again? If so, type the number of games you want. Else, enter 0: "))
         if restart > 0:
-            i = restart
+            number = restart
             print("Restarting...")
         else:
             print("Thanks for playing My Rock, Paper, and Scissors Game!")
