@@ -5,7 +5,7 @@ def roll():
         rolled = randint(1, 6)
         print(f"You rolled {rolled}")
         return rolled
-def restart:
+def restart():
     cont = input("Would you like to go again? (yes/no).")
     if cont == "yes":
         return True
