@@ -13,7 +13,6 @@ def check():
         password = input("Enter your password: ")
         if len(password) < 8:
             print("Not strong enough, try again. Tip: Make your password at least 8 characters.")
-        elif not check_password_contain_digit(password):
             print("You have 8 characters, but you are missing a number. Try again.")
         elif not any(char.isupper() for char in password):
             print("Add an Uppercase letter. Try again.")
