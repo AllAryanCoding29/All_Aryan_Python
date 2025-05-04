@@ -22,10 +22,10 @@ while(1):                                               # This while loop contro
             print(p1Name, "Wins!")
             p1Wins = p1Wins + 1
             break
-        while (1):
+        while True:
             print(p2Name,"Input your number : ")
             i = int(input())
-            if i > 0 and i < 10 :
+            if 0 < i < 10:
                 break
             print(p2Name, "Invalid Input..... Try Again! ")
         ctr = ctr +i
