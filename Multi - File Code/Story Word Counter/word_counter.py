@@ -1,15 +1,23 @@
 def read_story():
+    list_of_words = []
     with open("story.txt", "r") as file:
-        story = file.read()
-        return story
+        for line in file:
+            words = line.split()
+            for i in range(len(words)):
+                list_of_words.append(words[i])
+        return list_of_words
 
-def word_counter(story):
-    words = story.split() #solve without split()
-    return len(words)
+def word_counter(list_of_words):
+    return len(list_of_words)
 
 def run():
-    story_text = read_story()
-    word_count = word_counter(story_text)
-    print(f"The story has {word_count} words.")
+    list_of_words = read_story()
+    word_count = word_counter(list_of_words)
+    return f"The story has {word_count} words."
 
-run()
+def write(text):
+    with open("word_count.txt", "w") as file:
+        file.write(text)
+
+word_count_text = run()
+write(word_count_text)
