@@ -25,7 +25,7 @@ while True:
             print(f"The computer also played {computer}. It is a draw, so 1 point to both of you!")
             playerPoints = playerPoints + 1
             computerPoints = computerPoints + 1
-        elif computer == "Rock" and player == "Scissors" or computer == "Scissors" and player == "Paper":
+        elif computer == "Rock" and player == "Scissors" or computer == "Scissors" and player == "Paper" or computer == "Paper" and player == "Rock":
             print(f"The computer played {computer}, so you lose this point.")
             computerPoints = computerPoints + 1
         else:
