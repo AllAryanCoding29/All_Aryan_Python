@@ -199,3 +199,5 @@ all_students = [Student("Aryan", 29, "A+", (97, 98, 100, 102), 100),
 all_teachers = [Teacher("Mohit", 100, "Programming"),
                 Teacher("Mr. Patel", 23, "Graphic Design"),
                 Teacher("Mr. Jain", 99, "Programming")]
+
+menu_input()
