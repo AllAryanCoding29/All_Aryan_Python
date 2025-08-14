@@ -179,9 +179,12 @@ def menu_input():
         elif choice == 1:
             print("Sorry, this feature is still in development. Manually add it in the code for now! Thanks!")
         elif choice == 2:
-            search_by_roll(all_students)
+            student = search_by_roll(all_students)
+            student.display_info()
         elif choice == 3:
-            search_by_subject(all_teachers)
+            teachers = search_by_subject(all_teachers)
+            for teacher in teachers:
+                teacher.display_info()
         elif choice == 4:
             Person.school_name_shift()
         elif choice == 5:
